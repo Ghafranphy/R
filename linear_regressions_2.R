@@ -1,0 +1,9 @@
+library(caTools)
+library(ggplot2)
+data=mtcars
+splitratio=sample.split(data$mpg,SplitRatio=0.8)
+Train=subset(data,splitratio==TRUE)
+Test=subset(data,splitratio==FALSE)
+modelpredict=lm(mpg~.,data=Train)
+model1=predict(modelpredict,Train)
+ggplot()+geom_point(aes(x=data$mpg,y=data$disp))

@@ -1,0 +1,10 @@
+library(caTools)
+library(ggplot2)
+data=read.csv("C:/Users/Ghafran/Downloads/R_Programming/Salary_Data.csv")
+samplemodel=sample.split(data,SplitRatio = 0.6)
+Train=subset(data,samplemodel==T)
+Test=subset(data,samplemodel==F)
+model1=lm(Salary~.,data=Train)
+model.predict=predict(model1,data=Test)
+ggplot()+geom_point(aes(x=data$YearsExperience,y=data$Salary))+geom_line(aes(x=Train$YearsExperience,
+                                                                             y=model.predict))
