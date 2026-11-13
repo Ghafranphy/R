@@ -1,3 +1,22 @@
+############################################################
+# R Programming: Fundamentals, Data Structures, Data
+# Manipulation, Data Visualization, and Machine Learning
+#
+# Topics Covered:
+# 1. Vectors and Data Types
+# 2. Logical Operators and Arithmetic Operations
+# 3. Matrices, Arrays, Lists, and Data Frames
+# 4. Conditional Statements (if-else and switch)
+# 5. Loops (for, while, and repeat)
+# 6. String Manipulation and Functions
+# 7. Data Visualization Using Base R
+# 8. Data Visualization Using ggplot2
+# 9. Data Manipulation Using dplyr
+# 10. Data Exploration and Analysis
+# 11. Train-Test Splitting
+# 12. Simple and Multiple Linear Regression
+# 13. Model Prediction and Error Evaluation (RMSE)
+############################################################
 # vector
 
 #logical
